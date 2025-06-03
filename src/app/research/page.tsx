@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import AnimatedCard from "@/components/AnimatedCard";
 
 // Consider creating or using a carousel component here, e.g., an Embla Carousel or a custom one with Framer Motion.

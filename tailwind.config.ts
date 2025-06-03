@@ -61,6 +61,9 @@ const config: Config = {
       backgroundSize: {
         "gradient-size": "200% 200%",
       },
+      blur: {
+        '3xl': '64px',
+      },
     },
   },
   plugins: [],
