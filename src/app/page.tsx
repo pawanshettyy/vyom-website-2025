@@ -3,7 +3,6 @@
 import React from "react";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import DomainsSection from "@/components/DomainsSection";
 import ResearchSection from "@/components/ResearchSection";
 import ContactSection from "@/components/ContactSection";
 
@@ -12,7 +11,6 @@ export default function Home() {
     <main className="min-h-screen text-white font-sans overflow-x-hidden">
       <HeroSection />
       <AboutSection />
-      <DomainsSection />
       <ResearchSection />
       <ContactSection />
     </main>
