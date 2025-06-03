@@ -46,7 +46,7 @@ const domains = [
 
 export default function DomainsSection() {
   return (
-    <section id="domains" className="py-20 backdrop-blur-md">
+    <section id="domains" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ export default function DomainsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {domains.map((domain, idx) => (
             <Link key={domain.slug} href={`/domains/${domain.slug}`}>
-              <AnimatedCard delay={0.4 + idx * 0.1} className="h-full">
+              <AnimatedCard delay={0.4 + idx * 0.1} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center h-full">
                 <div className="text-4xl mb-4">{domain.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">{domain.title}</h3>
                 <p className="text-gray-300">{domain.description}</p>

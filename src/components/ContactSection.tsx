@@ -7,7 +7,7 @@ import AnimatedCard from "@/components/AnimatedCard";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 backdrop-blur-md">
+    <section id="contact" className="py-20">
       <div className="max-w-5xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

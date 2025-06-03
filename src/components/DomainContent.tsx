@@ -69,7 +69,7 @@ export default function DomainContent({ domain }: DomainContentProps) {
           </motion.p>
           <div className="space-y-8">
             {domain.sections.map((section, idx) => (
-              <AnimatedCard key={section.title} delay={0.3 + idx * 0.1}>
+              <AnimatedCard key={section.title} delay={0.3 + idx * 0.1} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
                 <h2 className="text-2xl font-semibold text-white mb-4">{section.title}</h2>
                 <p className="text-gray-300">{section.content}</p>
               </AnimatedCard>

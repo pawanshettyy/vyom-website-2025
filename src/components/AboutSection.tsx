@@ -6,8 +6,8 @@ import AnimatedCard from "@/components/AnimatedCard";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 backdrop-blur-md">
-      <div className="max-w-5xl mx-auto px-4">
+    <section id="about" className="relative py-20">
+      <div className="relative z-10 max-w-5xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,10 +20,11 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg text-gray-300 max-w-3xl mx-auto text-center mb-12"
+          className="text-lg text-gray-200 max-w-3xl mx-auto text-center mb-12"
         >
           We are a team of passionate space enthusiasts dedicated to exploring the mysteries of the universe and making space exploration accessible to everyone.
         </motion.p>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
@@ -42,10 +43,14 @@ export default function AboutSection() {
               icon: "💫",
             },
           ].map((item, idx) => (
-            <AnimatedCard key={item.title} delay={0.4 + idx * 0.1}>
+            <AnimatedCard
+              key={item.title}
+              delay={0.4 + idx * 0.1}
+              className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center"
+            >
               <div className="text-4xl mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-              <p className="text-gray-300">{item.description}</p>
+              <p className="text-gray-200">{item.description}</p>
             </AnimatedCard>
           ))}
         </div>

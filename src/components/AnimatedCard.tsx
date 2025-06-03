@@ -46,7 +46,7 @@ const AnimatedCard = ({ children, className = "", delay = 0 }: AnimatedCardProps
         scale: hoverScale,
         transition: { duration: hoverTransitionDuration },
       }}
-      className={`relative group rounded-xl ${className}`}
+      className={`relative group rounded-xl bg-[#181824] border border-white/20 shadow-xl p-8 flex flex-col items-center`}
       onMouseMove={handleMouseMove}
     >
       {/* Dynamic Glow effect following mouse */}
@@ -58,7 +58,7 @@ const AnimatedCard = ({ children, className = "", delay = 0 }: AnimatedCardProps
       />
 
       {/* Card content */}
-      <div className="relative bg-black/40 backdrop-blur-sm rounded-xl p-8 border border-gray-800 shadow-lg">
+      <div className={`relative ${className}`}>
         {children}
       </div>
     </motion.div>

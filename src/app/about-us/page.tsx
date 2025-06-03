@@ -74,7 +74,7 @@ export default function AboutUs() {
       </section>
 
       {/* About Vyom Voyage Section */}
-      <section id="about" className="py-20 backdrop-blur-md">
+      <section id="about" className="py-20">
         <div className="max-w-5xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -94,7 +94,7 @@ export default function AboutUs() {
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {aboutItems.map((item, idx) => (
-              <AnimatedCard key={item.title} delay={0.4 + idx * 0.1}>
+              <AnimatedCard key={item.title} delay={0.4 + idx * 0.1} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
                 <p className="text-gray-300">{item.description}</p>
@@ -125,7 +125,7 @@ export default function AboutUs() {
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
-              <AnimatedCard key={member.name} delay={0.4 + idx * 0.1}>
+              <AnimatedCard key={member.name} delay={0.4 + idx * 0.1} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
                 <div className="text-4xl mb-4">{member.icon}</div>
                 <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
                 <p className="text-gray-300">{member.role}</p>
@@ -136,7 +136,7 @@ export default function AboutUs() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-20 backdrop-blur-md">
+      <section id="faq" className="py-20">
         <div className="max-w-5xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -148,7 +148,7 @@ export default function AboutUs() {
           </motion.h2>
           <div className="space-y-6">
             {faqItems.map((faq, idx) => (
-              <AnimatedCard key={idx} delay={0.4 + idx * 0.1}>
+              <AnimatedCard key={idx} delay={0.4 + idx * 0.1} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
                 <h3 className="text-xl font-semibold text-white mb-2">{faq.question}</h3>
                 <p className="text-gray-300">{faq.answer}</p>
               </AnimatedCard>

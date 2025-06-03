@@ -81,7 +81,7 @@ export default function ContactUs() {
           >
             Have questions or want to collaborate? We&apos;d love to hear from you.
           </motion.p>
-          <AnimatedCard delay={0.3}>
+          <AnimatedCard delay={0.3} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">

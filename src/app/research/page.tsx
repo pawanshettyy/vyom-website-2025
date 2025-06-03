@@ -43,7 +43,7 @@ export default function Research() {
             Explore our research initiatives and scientific contributions to space exploration.
           </motion.p>
           <div className="space-y-8">
-            <AnimatedCard delay={0.3}>
+            <AnimatedCard delay={0.3} className="bg-[#181824] border border-white/20 rounded-2xl shadow-xl p-8 flex flex-col items-center">
               <h2 className="text-2xl font-semibold text-white mb-4">Coming Soon</h2>
               <p className="text-gray-300">
                 We&apos;re currently working on exciting research projects. Stay tuned for updates!
