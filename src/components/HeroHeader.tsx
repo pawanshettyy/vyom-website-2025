@@ -73,7 +73,7 @@ export default function HeroHeader() {
       </div>
 
       {/* Floating Header */}
-      <header className="fixed top-6 left-0 w-full flex items-center justify-between z-50 pointer-events-none">
+      <header className="fixed top-0 left-0 w-full flex items-center justify-between z-50 pointer-events-none py-3">
         {/* Left: Hamburger */}
         <div className="pl-8 pointer-events-auto">
           <button

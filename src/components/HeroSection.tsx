@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-[90vh] overflow-hidden bg-black">
+    <section className="relative flex flex-col items-center justify-center min-h-screen overflow-visible bg-black pt-32 pb-16">
       {/* Animated Glowing Orb Background */}
       <div className="absolute inset-0 flex items-center justify-center z-0">
         <motion.div
