@@ -6,6 +6,7 @@ import SpaceBackground from "@/components/SpaceBackground";
 import SplashScreen from "@/components/SplashScreen";
 import AnimatedLogoBackground from "@/components/AnimatedLogoBackground";
 import { Orbitron, Montserrat } from "next/font/google";
+import ClientOnly from "@/components/ClientOnly";
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -42,9 +43,13 @@ export default function RootLayout({
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 backdrop-blur-[1px]" />
         </div>
-        <SplashScreen />
-        <SpaceBackground />
-        <AnimatedLogoBackground />
+        <ClientOnly>
+          <SplashScreen />
+          <SpaceBackground />
+          <ClientOnly>
+            <AnimatedLogoBackground />
+          </ClientOnly>
+        </ClientOnly>
         <Navbar />
         {children}
         <Footer />
