@@ -46,13 +46,11 @@ export default function RootLayout({
         <ClientOnly>
           <SplashScreen />
           <SpaceBackground />
-          <ClientOnly>
-            <AnimatedLogoBackground />
-          </ClientOnly>
+          <AnimatedLogoBackground />
+          <Navbar />
+          {children}
+          <Footer />
         </ClientOnly>
-        <Navbar />
-        {children}
-        <Footer />
       </body>
     </html>
   );
